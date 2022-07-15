@@ -1,0 +1,203 @@
+/*--------------------------------------------------[ Filters ]--------------------------------------------------*/
+#filter-section, h2
+{
+    margin-bottom: 5px;
+
+    border-bottom: 2%;
+}
+
+#filter-section p
+{
+    margin-top: 5px;
+    
+    border-top: 2% ;
+}
+
+/*----------------------------------------[ Filter bar ]----------------------------------------*/
+#filter_searching-bar
+{
+    display: flex;
+    flex-wrap: wrap ;
+    
+    width: fit-content;
+    height: 45px;
+
+    margin-top: 28px;
+    margin-bottom: 25px;
+    
+    border-radius: 10px;
+
+    border: 1px solid #F2F2F2;
+    
+    overflow: hidden;
+}
+
+#filter_searching-bar a
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+
+    background-color: #F2F2F2;
+}
+
+#searching-bar_input
+{
+    width: 260px;
+    
+    margin-right: 0px;
+    
+    border-right: 0px;
+}
+
+#searching-bar_submit 
+{
+    width: 100px;
+
+    margin-left: 0px;
+    
+    border-left: 0px; 
+
+    background-color: #0065FC;
+    color: white;
+
+    cursor: pointer;
+}
+
+/*----------------------------------------[ Filter button bar ]----------------------------------------*/
+#filter_button-bar
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    width: 60%;
+
+    margin-bottom: 30px;
+}
+
+#filter_button-bar-title
+{
+    margin-right: 45px;
+}
+
+#filter_button-bar-buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-button 
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: 45px;
+
+    border: 2px #F2F2F2 solid;
+    border-radius: 30px;
+    
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.filter-button:hover
+{
+    transform: scale(1.20);
+    background-color: #DEEBFF;
+}
+
+label
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+#economic:checked ~ .filter-button
+{
+    background-color: #DEEBFF;
+}
+
+.filter-button input
+{
+   display: none;
+}
+
+.filter-button_circle
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 200px;
+    background: #DEEBFF;
+}
+
+.filter_button-text
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.filter-button i
+{
+    color: #0065FC;
+}
+
+.filter-button a
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+/*----------------------------------------[ Infos ]----------------------------------------*/
+#infos
+{
+    display : flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+
+}
+
+#infos i 
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    color: #0065FC;
+
+
+}
+ 
+#infos p
+{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+
+}
+
