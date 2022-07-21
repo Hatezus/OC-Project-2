@@ -1,0 +1,282 @@
+/*--------------------------------------------------[ Generals ]--------------------------------------------------*/
+#main_wraper
+{
+    margin: 3%;
+    border-right: 0px;
+}
+
+/*--------------------------------------------------[ Header ]--------------------------------------------------*/
+header
+{
+    flex-direction: column;
+
+    width: 100%;
+}
+
+#logo
+{
+    margin-bottom: 10px;
+}
+
+header nav
+{
+    width: 100%;
+}
+
+header nav ul 
+{
+    justify-content: space-around;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+header nav ul:hover
+{
+    border-bottom: 1px solid #0065fc ;
+}
+/*--------------------------------------------------[ Filters ]--------------------------------------------------*/
+#filter-section, h2
+{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/*----------------------------------------[ FIlter bar ]----------------------------------------*/
+#filter_searching-bar
+{
+    width: 100%;
+}
+
+#filter_searching-bar a
+{
+    width: 15%;
+}
+
+#searching-bar_input
+{
+    width: 70%;
+}
+
+#searching-bar_submit 
+{
+    width: 15%;
+}
+
+/*----------------------------------------[ Filter button bar ]----------------------------------------*/
+#filter_button-bar
+{
+    width: 100% ;
+}
+
+#filter_button-bar h3
+{
+    margin-bottom: 15px;
+}
+
+#filter_button-bar-buttons
+{
+    justify-content:flex-start
+}
+
+/*----------------------------------------[ Infos ]----------------------------------------*/
+#infos
+{
+    width: 100%;
+}
+
+#infos i 
+{
+    width: 10%;
+}
+
+#infos p
+{
+    width: 90%;
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/*--------------------------------------------------[ Lodging ]--------------------------------------------------*/
+/*--------------------------------------------------[ Aside ]--------------------------------------------------*/
+#lodging-section aside
+{
+    order: 1;
+
+    width: 100%;
+}
+
+/*----------------------------------------[ Title ]----------------------------------------*/
+#lodging-aside_title
+{
+    width: 100%;
+
+    margin-left: 0px;
+}
+
+/*----------------------------------------[ Showcase ]----------------------------------------*/
+#lodging-aside_showcase
+{
+    width: 100%;
+}
+
+/*----------------------------------------[ Snipet ]----------------------------------------*/
+.lodging-aside_snipet
+{
+    width:100%; 
+}
+
+/*--------------------------------------------------[ Section ]--------------------------------------------------*/
+#lodging-section section
+{
+    order: 2;
+
+    flex-direction: column;
+
+    height: 1450px;
+    width: 100%;
+
+    background-color: white;
+}
+
+#lodging-section_title 
+{
+    width: 100%;
+}
+
+/*----------------------------------------[ Showcase ]----------------------------------------*/
+#lodging-section_showcase
+{
+    justify-content: flex-start;
+    flex-direction: column;
+
+    height: 1440px;
+    width: 100%;
+}
+ 
+.lodging-aside_snipet
+{
+    height: 180px;
+    width: 80%;
+}
+
+#lodging-section_seeMore
+{
+    order: 3;
+}
+
+/*--------------------------------------------------[ Activities ]--------------------------------------------------*/
+
+#activity-section
+{
+    height: 1200px;
+    width: 100%;
+
+    flex-direction: column;
+
+    margin-bottom: 100px;
+}
+
+#activity-title
+{
+    margin-bottom: 30px;
+}
+
+.activity-container
+{
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+}
+
+/*----------------------------------------[ Huge snipet ]----------------------------------------*/
+.activity_huge-snipet
+{
+    width: 80%;
+    height: 180px;
+
+    margin-bottom: 25px;
+}
+.activity_huge-snipet-picture
+{
+    width: 100%;
+    height: 130px;
+}
+
+/*----------------------------------------[ Medium snipet]----------------------------------------*/
+.activity_medium-snipet
+{
+    width: 80%;
+    height: 180px;
+
+    margin-bottom: 25px;
+}
+.activity_medium-snipet-picture
+{
+    width: 100%;
+    height: 130px;
+}
+
+/*----------------------------------------[ Small snipet ]----------------------------------------*/
+.activity_small-snipet
+{
+    width: 80%;
+    height: 180px;
+
+    margin-bottom: 25px;
+}
+.activity_small-snipet-picture
+{
+    width: 100%;
+    height: 130px;
+}
+
+/*----------------------------------------[ Smaller snipet ]----------------------------------------*/
+.activity_smaller-snipet
+{
+    width: 80%;
+    height: 180px;
+
+    margin-bottom: 25px;
+}
+.activity_smaller-snipet-picture
+{
+    width: 100%;
+    height: 130px;
+}
+
+/*----------------------------------------[ Mediumer snipet ]----------------------------------------*/
+.activity_mediumer-snipet
+{
+    width: 80%;
+    height: 180px;
+
+    margin-bottom: 25px;
+}
+.activity_mediumer-snipet-picture
+{
+    width: 100%;
+    height: 130px;
+}
+
+/*--------------------------------------------------[ Footer ]--------------------------------------------------*/
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 460px;
+}
+
+footer div
+{
+    width: 100%;
+
+
+    margin-left: 40px;
+}
