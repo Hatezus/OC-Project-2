@@ -493,7 +493,7 @@ label
 /*----------------------------------------[ Snipet ]----------------------------------------*/
 .lodging-aside_snipet
 {
-    display: block flex;
+    display:  flex;
     flex-wrap: wrap;
 
     width: 80%;
@@ -538,14 +538,17 @@ label
 
     margin-top: 15px;
     margin-left: 15px;
-    margin-bottom: 30px;
-
-    border: black 1px solid;
+    margin-bottom: 30px;    
 }
 
  .lodging-aside_snipet-name
  {
+    height: fit-content;
+    width: fit-content;
+
     font-weight: bold;
+
+    border: black solid 1px;
  }
 
 .lodging-aside_snipet-text .rating-system
@@ -592,7 +595,7 @@ label
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
     height: 820px;
     width: 23%;
@@ -603,6 +606,8 @@ label
 /*----------------------------------------[ Huge snipet ]----------------------------------------*/
 .activity_huge-snipet
 {
+    display: block flex;
+
     height: 800px;
     width: 100%; 
 
@@ -631,6 +636,10 @@ label
 /*----------------------------------------[ Medium snipet ]----------------------------------------*/
 .activity_medium-snipet
 {
+
+    display: block flex;
+
+
     height: 500px;
     width: 100%;
 
@@ -659,6 +668,8 @@ label
 /*----------------------------------------[ Small snipet ]----------------------------------------*/
 .activity_small-snipet
 {
+    display: block flex;
+
     height: 300px;
     width: 100%;
 
@@ -687,6 +698,8 @@ label
 /*----------------------------------------[ Smaller snipet ]----------------------------------------*/
 .activity_smaller-snipet
 {
+    display: block flex;
+
     height: 230px;
     width: 100%;
 
@@ -715,6 +728,8 @@ label
 /*----------------------------------------[ Mediumer snipet ]----------------------------------------*/
 .activity_mediumer-snipet
 {
+    display: block flex;
+
     height: 430px;
     width: 100%;
 
