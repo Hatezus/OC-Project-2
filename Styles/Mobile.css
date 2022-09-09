@@ -1,9 +1,19 @@
 /*--------------------------------------------------[ Generals ]--------------------------------------------------*/
 #main_wraper
 {
-    margin: 3%;
+    margin: 0%;
     border-right: 0px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------[ Header ]--------------------------------------------------*/
 header
@@ -29,9 +39,10 @@ header nav ul
     border-bottom: 1px solid #f2f2f2;
 }
 
-header nav ul:hover
+header nav li a:hover
 {
-    border-bottom: 1px solid #0065fc ;
+   border-bottom: 1px solid #0065FC;
+   color: #0065FC;
 }
 /*--------------------------------------------------[ Filters ]--------------------------------------------------*/
 #filter-section, h2
@@ -74,7 +85,7 @@ header nav ul:hover
 
 #filter_button-bar-buttons
 {
-    justify-content:flex-start
+    justify-content:flex-start;
 }
 
 /*----------------------------------------[ Infos ]----------------------------------------*/
@@ -98,73 +109,37 @@ header nav ul:hover
 }
 
 /*--------------------------------------------------[ Lodging ]--------------------------------------------------*/
-/*--------------------------------------------------[ Aside ]--------------------------------------------------*/
-#lodging-section aside
+#lodging-section
 {
-    order: 1;
-
-    width: 100%;
+    height: 2740px;
 }
+
+/*--------------------------------------------------[ Aside ]--------------------------------------------------*/
 
 /*----------------------------------------[ Title ]----------------------------------------*/
-#lodging-aside_title
-{
-    width: 100%;
-
-    margin-left: 0px;
-}
 
 /*----------------------------------------[ Showcase ]----------------------------------------*/
-#lodging-aside_showcase
-{
-    width: 100%;
-}
+
 
 /*----------------------------------------[ Snipet ]----------------------------------------*/
-.lodging-aside_snipet
-{
-    width:100%; 
-}
+
 
 /*--------------------------------------------------[ Section ]--------------------------------------------------*/
-#lodging-section section
+#lodging-section_main
 {
-    order: 2;
-
-    flex-direction: column;
-
-    height: 1450px;
-    width: 100%;
-
+    height: 2020px;
     background-color: white;
 }
 
-#lodging-section_title 
-{
-    width: 100%;
-}
-
 /*----------------------------------------[ Showcase ]----------------------------------------*/
-#lodging-section_showcase
-{
-    justify-content: flex-start;
-    flex-direction: column;
 
-    height: 1440px;
-    width: 100%;
-}
- 
-.lodging-aside_snipet
-{
-    height: 180px;
-    width: 80%;
-}
 
-#lodging-section_seeMore
-{
-    order: 3;
-}
 
+
+.lodging-snipet
+{
+    width: 95%;
+}
 /*--------------------------------------------------[ Activities ]--------------------------------------------------*/
 
 #activity-section
@@ -174,6 +149,8 @@ header nav ul:hover
 
     flex-direction: column;
 
+    justify-content: space-evenly;
+
     margin-bottom: 100px;
 }
 
@@ -181,6 +158,12 @@ header nav ul:hover
 {
     margin-bottom: 30px;
 }
+
+#activity-section_showcase
+{
+    margin-left: 40px;
+}
+
 
 .activity-container
 {
@@ -193,7 +176,7 @@ header nav ul:hover
 /*----------------------------------------[ Huge snipet ]----------------------------------------*/
 .activity_huge-snipet
 {
-    width: 80%;
+    width: 90%;
     height: 180px;
 
     margin-bottom: 25px;
@@ -207,7 +190,7 @@ header nav ul:hover
 /*----------------------------------------[ Medium snipet]----------------------------------------*/
 .activity_medium-snipet
 {
-    width: 80%;
+    width: 90%;
     height: 180px;
 
     margin-bottom: 25px;
@@ -221,7 +204,7 @@ header nav ul:hover
 /*----------------------------------------[ Small snipet ]----------------------------------------*/
 .activity_small-snipet
 {
-    width: 80%;
+    width: 90%;
     height: 180px;
 
     margin-bottom: 25px;
@@ -235,7 +218,7 @@ header nav ul:hover
 /*----------------------------------------[ Smaller snipet ]----------------------------------------*/
 .activity_smaller-snipet
 {
-    width: 80%;
+    width: 90%;
     height: 180px;
 
     margin-bottom: 25px;
@@ -249,7 +232,7 @@ header nav ul:hover
 /*----------------------------------------[ Mediumer snipet ]----------------------------------------*/
 .activity_mediumer-snipet
 {
-    width: 80%;
+    width: 90%;
     height: 180px;
 
     margin-bottom: 25px;

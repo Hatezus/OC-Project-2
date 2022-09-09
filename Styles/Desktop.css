@@ -1,13 +1,4 @@
 /*--------------------------------------------------[ Generals ]--------------------------------------------------*/
-@font-face 
-{
-    font-family: 'Raleway';
-    src: url('/polices/Raleway-VariableFont_wght.ttf') format('truetype') ,
-         url('/polices/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal; 
-}
-
 * 
 {
     border: none;
@@ -21,17 +12,23 @@
 #main_wraper
 {
     max-width: 1920px;
-    margin: 3%;    
+    margin: 0 3%;    
 }
 
 body 
 {
     font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 400;
 }
 
 a
 {
     color: black;
+}
+
+span
+{
+    display: block;
 }
 
 
@@ -51,6 +48,8 @@ header
     flex-wrap: wrap;
 
     justify-content: space-between;
+
+    padding-top: 20px;
 }
 
 #logo
@@ -67,11 +66,7 @@ header nav
 {
     display: flex;
     flex-wrap: wrap;
-
-    width: 13%; 
     height: 60px;
-
-    margin-top: 18px;
 }
 
 header nav ul
@@ -84,6 +79,17 @@ header nav ul
     justify-content: space-between;
     align-items: center;
 }
+
+header nav ul li a 
+{
+    padding: 38px;
+}
+
+ header nav li a:hover
+ {
+    border-top: 4px solid #0065FC;
+    color: #0065FC;
+ }
 
 
 
@@ -110,14 +116,14 @@ header nav ul
     border-top: 2% ;
 }
 
-/*----------------------------------------[ Filter bar ]----------------------------------------*/
+/*----------------------------------------[ Filter searching bar ]----------------------------------------*/
 #filter_searching-bar
 {
     display: flex;
     flex-wrap: wrap ;
     
     width: fit-content;
-    height: 45px;
+    height: 50px;
 
     margin-top: 28px;
     margin-bottom: 25px;
@@ -149,11 +155,15 @@ header nav ul
     margin-right: 0px;
     
     border-right: 0px;
+
+    padding-left: 20px;
+
+    font-weight: 700;
 }
 
 #searching-bar_submit 
 {
-    width: 100px;
+    width: 115px;
 
     margin-left: 0px;
     
@@ -163,6 +173,8 @@ header nav ul
     color: white;
 
     cursor: pointer;
+
+    font-weight: 700;
 }
 
 /*----------------------------------------[ Filter button bar ]----------------------------------------*/
@@ -173,9 +185,9 @@ header nav ul
 
     align-items: center;
 
-    width: 60%;
+    width: 65%;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #filter_button-bar-title
@@ -246,6 +258,8 @@ label
 {
     margin-left: 15px;
     margin-right: 15px;
+
+    font-weight: 700;
 }
 
 .filter-button i
@@ -272,6 +286,344 @@ label
     margin-bottom: 30px;
 }
 
+.filter_information-circle
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 200px;
+    border: 2px solid #F2F2F2;
+}
+
+#infos i 
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    color: #0065FC;
+}
+ 
+#infos p
+{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------[ Generals ]--------------------------------------------------*/
+* 
+{
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main_wraper
+{
+    max-width: 1920px;
+    margin: 0 3%;    
+}
+
+body 
+{
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 400;
+}
+
+a
+{
+    color: black;
+}
+
+span
+{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------[ Header ]--------------------------------------------------*/
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    padding-top: 20px;
+}
+
+#logo
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+header nav 
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+header nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a 
+{
+    padding-top: 38px;
+    padding-bottom: 20px;
+}
+
+ header nav li a:hover
+ {
+    border-top: 4px solid #0065FC;
+    color: #0065FC;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------[ Filters ]--------------------------------------------------*/
+#filter-section, h2
+{
+    margin-bottom: 5px;
+
+    border-bottom: 2%;
+}
+
+#filter-section p
+{
+    margin-top: 5px;
+    
+    border-top: 2% ;
+}
+
+/*----------------------------------------[ Filter searching bar ]----------------------------------------*/
+#filter_searching-bar
+{
+    display: flex;
+    flex-wrap: wrap ;
+    
+    width: fit-content;
+    height: 50px;
+
+    margin-top: 28px;
+    margin-bottom: 25px;
+    
+    border-radius: 10px;
+
+    border: 1px solid #F2F2F2;
+    
+    overflow: hidden;
+}
+
+#filter_searching-bar a
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+
+    background-color: #F2F2F2;
+}
+
+#searching-bar_input
+{
+    width: 260px;
+    
+    margin-right: 0px;
+    
+    border-right: 0px;
+
+    padding-left: 20px;
+
+    font-weight: 700;
+}
+
+#searching-bar_submit 
+{
+    width: 115px;
+
+    margin-left: 0px;
+    
+    border-left: 0px; 
+
+    background-color: #0065FC;
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+/*----------------------------------------[ Filter button bar ]----------------------------------------*/
+#filter_button-bar
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+#filter_button-bar-title
+{
+    margin-right: 45px;
+    margin-bottom: 15px;
+}
+
+#filter_button-bar-buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-button 
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: 45px;
+    margin-bottom: 10px;
+
+    border: 2px #F2F2F2 solid;
+    border-radius: 30px;
+    
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.filter-button:hover
+{
+    transform: scale(1.20);
+    background-color: #DEEBFF;
+}
+
+label
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.filter-button input
+{
+   display: none;
+}
+
+.filter-button_circle
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 200px;
+    background: #DEEBFF;
+}
+
+.filter_button-text
+{
+    margin-left: 15px;
+    margin-right: 15px;
+
+    font-weight: 700;
+}
+
+.filter-button i
+{
+    color: #0065FC;
+}
+
+.filter-button a
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+/*----------------------------------------[ Infos ]----------------------------------------*/
+#infos
+{
+    display : flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.filter_information-circle
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 200px;
+    border: 2px solid #F2F2F2;
+}
+
 #infos i 
 {
     display: flex;
@@ -296,19 +648,14 @@ label
 
 
 
-
 /*--------------------------------------------------[ Lodging ]--------------------------------------------------*/
 #lodging-section
 {
     display: flex;
-    flex-wrap: wrap;
-
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 /*--------------------------------------------------[ Section ]--------------------------------------------------*/
-#lodging-section section
+#lodging-section_main 
 {
     display: flex;
     flex-wrap: wrap; 
@@ -329,6 +676,8 @@ label
 {
     margin-left: 35px;
     margin-top: 35px;
+
+    font-weight: 700;
 }
 
 /*----------------------------------------[ Showcase ]----------------------------------------*/
@@ -348,16 +697,24 @@ label
     flex-direction: column;
 
     width: 28%;
-    height: 280px;
+    height: 275px;
     
     margin-top: 30px;
 
     border-radius: 30px;
 
-    box-shadow: 0px 10px 10px #B2B1B0;
+    box-shadow: 0px 10px 10px #E9E8E8;
 
     background-color: white; 
+
+    transform: scale(1);
+    transition: all 450ms;
 } 
+
+.lodging-snipet:hover
+{
+    transform: scale(1.05);
+}
 
 .lodging-snipet_picture
 {
@@ -390,16 +747,21 @@ label
 
 .lodging-snipet_name
 {
-    font-weight: bold;
-} 
-
-.lodging-snipet p
-{
+    font-weight: 700;
     height: 30px;
 
     margin-left: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
+} 
+
+.lodging-snipet_text
+{
+    height: 30px;
+
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 00px;
 }
 
 .rating-system
@@ -422,7 +784,7 @@ label
 
 #lodging-section_seeMore a
 {
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 
@@ -430,8 +792,12 @@ label
 
 
 
+
+
+
+
 /*--------------------------------------------------[ Aside ]--------------------------------------------------*/
-#lodging-section aside
+#lodging-aside
 {
     display: flex;
     flex-wrap: wrap;
@@ -444,6 +810,7 @@ label
     border-radius: 30px;
 
     background-color: #F2F2F2;
+
 }
 
 /*----------------------------------------[ Title ]----------------------------------------*/
@@ -457,9 +824,9 @@ label
 
     height: 35px;
 
-    margin-left: 30px;
+    margin-left: 55px;
     margin-top: 35px;
-    margin-bottom: 30px;
+    
 }
 
 #lodging-aside_title h2
@@ -473,6 +840,7 @@ label
     flex-wrap: wrap;
 
     align-items: center;
+
 
     margin-right: 30px; 
     margin-bottom: 13px;
@@ -488,6 +856,7 @@ label
     align-items: center;
 
     height: 670px;
+
 }
 
 /*----------------------------------------[ Snipet ]----------------------------------------*/
@@ -501,11 +870,19 @@ label
 
     border-radius: 30px;
 
-    margin-bottom: 40px;
+    margin:auto; 
 
     background-color: white; 
 
-    box-shadow: 0px 10px 10px #B2B1B0;
+    box-shadow: 0px 10px 10px #E9E8E8;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.lodging-aside_snipet:hover
+{
+    transform: scale(1.05);
 }
 
  .lodging-aside_snipet-picture
@@ -546,17 +923,16 @@ label
     height: fit-content;
     width: fit-content;
 
-    font-weight: bold;
+    height: 50px;
 
-    border: black solid 1px;
+    font-weight: 700;
  }
 
 .lodging-aside_snipet-text .rating-system
 {
-    margin-top: 75px;
+    margin-top: 68px;
     margin-left: 5px;
 }
-
 
 
 
@@ -570,14 +946,14 @@ label
 /*--------------------------------------------------[ Activities ]--------------------------------------------------*/
 #activity-section
 {
-    height: 890px ;
+    height: 825px;
 
-    margin-top: 30px ;
+    margin-top: 50px;
 }
 
 #activity-title
 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #activity-section_showcase        
@@ -587,7 +963,7 @@ label
 
     justify-content: space-around;
 
-    height: 805px;
+    height: 710px; 
 }
 
 .activity-container
@@ -596,11 +972,18 @@ label
     flex-wrap: wrap;
 
     justify-content: space-between;
+    align-content: space-between;
 
-    height: 820px;
+    height: 700px;
     width: 23%;
 
-    overflow: hidden;
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity-container:hover
+{
+    transform: scale(1.05);
 }
 
 /*----------------------------------------[ Huge snipet ]----------------------------------------*/
@@ -608,16 +991,24 @@ label
 {
     display: block flex;
 
-    height: 800px;
+    height: 700px;
     width: 100%; 
 
     border-radius: 30px;
-    box-shadow: 0px 10px 20px #F2F2F2;
+    box-shadow: 0px 5px 10px #E9E8E8;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_huge-snipet:hover
+{
+    transform: scale(1.02);
 }
 
 .activity_huge-snipet-picture
 {
-    height: 750px;
+    height: 650px;
     width: 100%;
 
     border-radius: 30px 30px 0px 0px;
@@ -636,20 +1027,26 @@ label
 /*----------------------------------------[ Medium snipet ]----------------------------------------*/
 .activity_medium-snipet
 {
+    display: block;
 
-    display: block flex;
-
-
-    height: 500px;
+    height: 380px;
     width: 100%;
 
     border-radius: 30px;
     box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_medium-snipet:hover
+{
+    transform: scale(1.03);
 }
 
 .activity_medium-snipet-picture
 {
-    height: 450px;
+    height: 330px;
     width: 100%;
 
     border-radius: 30px 30px 0px 0px;
@@ -668,18 +1065,26 @@ label
 /*----------------------------------------[ Small snipet ]----------------------------------------*/
 .activity_small-snipet
 {
-    display: block flex;
+    display: block;
 
-    height: 300px;
+    height: 280px;
     width: 100%;
 
     border-radius: 30px;
     box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_small-snipet:hover
+{
+    transform: scale(1.03);
 }
 
 .activity_small-snipet-picture
 {
-    height: 250px;
+    height: 230px;
     width: 100%;
 
     border-radius: 30px 30px 0px 0px;
@@ -698,18 +1103,26 @@ label
 /*----------------------------------------[ Smaller snipet ]----------------------------------------*/
 .activity_smaller-snipet
 {
-    display: block flex;
+    display: block;
 
-    height: 230px;
+    height: 220px;
     width: 100%;
 
     border-radius: 30px;
     box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_smaller-snipet:hover
+{
+    transform: scale(1.03);
 }
 
 .activity_smaller-snipet-picture
 {
-    height: 180px;
+    height: 170px;
     width: 100%;
 
     border-radius: 30px 30px 0px 0px;
@@ -728,18 +1141,26 @@ label
 /*----------------------------------------[ Mediumer snipet ]----------------------------------------*/
 .activity_mediumer-snipet
 {
-    display: block flex;
+    display: block;
 
-    height: 430px;
+    height: 320px;
     width: 100%;
 
     border-radius: 30px;
     box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_mediumer-snipet:hover
+{
+    transform: scale(1.03 );
 }
 
 .activity_mediumer-snipet-picture
 {
-    height: 380px;
+    height: 270px;
     width: 100%;
 
     border-radius: 30px 30px 0px 0px;
@@ -762,9 +1183,8 @@ label
     margin-left: 15px;
     margin-top: 15px;
     
-    font-weight: bold;
+    font-weight: 700; 
 }
-
 
 
 
@@ -798,6 +1218,309 @@ footer div
     width: 26%;
 
     margin-left: 80px;
+ }
+
+ footer div h3
+ {
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+
+footer div a 
+{
+    margin-bottom: 12px;
+    
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+footer div a:hover 
+{ 
+    transform: scale(1.20);
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------[ Activities ]--------------------------------------------------*/
+#activity-section
+{
+    height: 825px;
+
+    margin-top: 50px;
+}
+
+#activity-title
+{
+    margin-bottom: 30px;
+}
+
+#activity-section_showcase        
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    height: 710px; 
+}
+
+.activity-container
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-content: space-between;
+
+    height: 700px;
+    width: 23%;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity-container:hover
+{
+    transform: scale(1.05);
+}
+
+/*----------------------------------------[ Huge snipet ]----------------------------------------*/
+.activity_huge-snipet
+{
+    display: block flex;
+
+    height: 700px;
+    width: 100%; 
+
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px #E9E8E8;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_huge-snipet:hover
+{
+    transform: scale(1.02);
+}
+
+.activity_huge-snipet-picture
+{
+    height: 650px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+
+    overflow: hidden;
+}
+
+.activity_huge-snipet-picture img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*----------------------------------------[ Medium snipet ]----------------------------------------*/
+.activity_medium-snipet
+{
+    display: block;
+
+    height: 380px;
+    width: 100%;
+
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_medium-snipet:hover
+{
+    transform: scale(1.03);
+}
+
+.activity_medium-snipet-picture
+{
+    height: 330px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+
+    overflow: hidden;
+}
+
+.activity_medium-snipet-picture img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*----------------------------------------[ Small snipet ]----------------------------------------*/
+.activity_small-snipet
+{
+    display: block;
+
+    height: 280px;
+    width: 100%;
+
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_small-snipet:hover
+{
+    transform: scale(1.03);
+}
+
+.activity_small-snipet-picture
+{
+    height: 230px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+
+    overflow: hidden;
+}
+
+.activity_small-snipet-picture img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*----------------------------------------[ Smaller snipet ]----------------------------------------*/
+.activity_smaller-snipet
+{
+    display: block;
+
+    height: 220px;
+    width: 100%;
+
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_smaller-snipet:hover
+{
+    transform: scale(1.03);
+}
+
+.activity_smaller-snipet-picture
+{
+    height: 170px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+
+    overflow: hidden;
+}
+
+.activity_smaller-snipet-picture img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*----------------------------------------[ Mediumer snipet ]----------------------------------------*/
+.activity_mediumer-snipet
+{
+    display: block;
+
+    height: 320px;
+    width: 100%;
+
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px #F2F2F2;
+
+    transform: scale(1);
+    transition: all 450ms;
+}
+
+.activity_mediumer-snipet:hover
+{
+    transform: scale(1.03 );
+}
+
+.activity_mediumer-snipet-picture
+{
+    height: 270px;
+    width: 100%;
+
+    border-radius: 30px 30px 0px 0px;
+
+    overflow: hidden;
+}
+
+.activity_mediumer-snipet-picture img
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/*----------------------------------------[ Snipet text ]----------------------------------------*/
+.activity_snipet-text
+{
+    margin-left: 15px;
+    margin-top: 15px;
+    
+    font-weight: 700; 
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------[ Footer ]--------------------------------------------------*/
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+
+    margin-top: 5px;
+    
+    background-color: #F2F2F2;
+}
+
+footer div
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    width: 26%;
  }
 
  footer div h3
