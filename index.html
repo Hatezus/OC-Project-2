@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
     <head>
+
+        <title>Booki Main Page</title>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="/Styles/Desktop.css">
-        <link rel="stylesheet" media="screen and (max-width: 1230px)" href="/Styles/Soft changes.css">
-        <link rel="stylesheet" media="screen and (max-width: 992px)" href="/Styles/Tablets.css">
-        <link rel="stylesheet" media="screen and (max-width: 768px)" href="/Styles/Mobile.css">
+        <link rel="stylesheet" href="/styles/desktop.css">
+        <link rel="stylesheet" media="screen and (max-width: 1230px)" href="/styles/light-changes.css">
+        <link rel="stylesheet" media="screen and (max-width: 992px)" href="/styles/tablet.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="/styles/mobile.css">
 
         <script src="https://kit.fontawesome.com/245f84bdbc.js" crossorigin="anonymous"></script>
-        <title>Booki Main Page</title>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
     </head>
 
     <body>
-        <div id="main_wraper">
 <!--------------------------------------------------[ Header ]--------------------------------------------------->
             <header>
                <div id="logo">
@@ -43,8 +45,18 @@
                 <p> En plein centre ville ou en pleine nature </p>
                 <div id="filter_searching-bar">
                     <a href="https://www.google.com/maps/"><i class="fa-solid fa-location-dot"></i></a>   
-                    <input id="searching-bar_input" type="search", placeholder="Ville, Pays">
-                    <input id="searching-bar_submit" type="submit" value="Rechercher">
+                    <input id="searching-bar_input" type="search" placeholder="Ville, Pays">
+                    <div id="searching-bar_submit">
+                        <label for="submit">
+                            <span id="submit-button_text">
+                                Rechercher
+                            </span>
+                            <span id="submit-button_iclass">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </label>
+                        <input type="submit" id="submit" name="submit" value="">
+                    </div>
                 </div>
 
                 <div id="filter_button-bar">
@@ -111,7 +123,7 @@
             </section>
 <!--------------------------------------------------[ Lodging]--------------------------------------------------->        
             <section id="lodging-section">
-                <section id="lodging-section_main" >
+                <div id="lodging-section_main" >
                     <div id="lodging-section_title">
                         <h2> Hébergement à Marseille </h2>
                     </div> 
@@ -128,7 +140,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star" style="color: #f2f2f2;"></i> 
+                                <i class="fa-solid fa-star grey"></i> 
                             </span>
                         </a>
 
@@ -158,7 +170,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>  
+                                <i class="fa-solid fa-star grey"></i>  
                             </span>
                         </a>
 
@@ -172,8 +184,8 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star" style="color: #f2f2f2;"></i> 
-                                <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>  
+                                <i class="fa-solid fa-star grey"></i> 
+                                <i class="fa-solid fa-star grey"></i>  
                             </span>
                         </a>
 
@@ -188,7 +200,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>  
+                                <i class="fa-solid fa-star grey"></i>  
                             </span>
                         </a>
 
@@ -212,20 +224,20 @@
                         <a href="#"> Afficher plus </a>
                     </div>
                 
-                </section>
+                </div>
                 <aside id="lodging-aside">
                     <div id="lodging-aside_title">
                         <h2> Les plus populaires </h2>
                         <i class="fa-solid fa-star"></i>
                     </div>
-
+                    <div id="lodging-aside_showcase">
 
                         <a class="lodging-aside_snipet" href="#">
                             <span class="lodging-aside_snipet-picture">
                                 <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image de chambre">     
                             </span>
                             <span class="lodging-aside_snipet-text">
-                                <span class="lodging-aside_snipet-name"> Hôtel Le soleul du matin <br> </span>
+                                <span class="lodging-aside_snipet-name"> Hôtel Le soleil du matin <br> </span>
                                 <span> Nuit à partir de 128€ <br> </span>
                                 <span class="rating-system">
                                     <i class="fa-solid fa-star"></i>
@@ -249,7 +261,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i> 
+                                    <i class="fa-solid fa-star grey"></i> 
                                 </span>
                             </span>
                         </a>
@@ -266,12 +278,13 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star" style="color: #f2f2f2;"></i>  
+                                    <i class="fa-solid fa-star grey"></i>  
                                 </span>
                             </span>
                         </a>
+                    </div>
                 </aside>
-        </section>    
+            </section>    
 <!--------------------------------------------------[ Activities ]--------------------------------------------------->        
             <section id="activity-section"> 
                 <div id="activity-title">
@@ -342,8 +355,7 @@
                         </a>
                     </div>
                 </div>
-            </section>
-        </div>   
+            </section>     
 <!--------------------------------------------------[ Footer ]--------------------------------------------------->
             <footer> 
                 <div>
@@ -364,6 +376,8 @@
                     <a href="#"> Centre d'aide </a>
                     <a href="#"> Nous contacter  </a>
                 </div>
-            </footer>   
-    </body>
+            </footer> 
+    
+        </body>
+
 </html>
